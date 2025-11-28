@@ -28,7 +28,7 @@ The system addresses the challenge of high-traffic sales where multiple users co
     ```
 
     ```
-    *Configure your database credentials in the `.env` file.*
+    *Configure your database credentials in the `.env` so the database name is laravel.*
 
 3.  **Database Setup**
     Run migrations and seed the database with a test product (ID: 1, Stock: 10).
