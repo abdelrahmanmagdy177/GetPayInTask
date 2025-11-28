@@ -1,0 +1,2 @@
+Client error: `POST http://127.0.0.1:8000/api/checkout` resulted in a `400 Bad Request` response:
+{"message":"Insufficient stock"}
