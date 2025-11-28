@@ -95,3 +95,10 @@ A custom Artisan command is included to verify the entire lifecycle (Hold -> Ord
 ```bash
 php artisan test:flow
 ```
+
+### Concurrency Stress Test
+To verify that the system handles high traffic without overselling:
+```bash
+php artisan test:concurrency --count=20
+```
+This command sends 20 concurrent requests to reserve a product with only 10 stock, ensuring exactly 10 holds are created.
