@@ -12,8 +12,6 @@ class PaymentController extends Controller
 {
     public function webhook(Request $request)
     {
-        // Idempotency check usually involves checking a header or a unique transaction ID in the body
-        // For this task, we'll assume the 'transaction_id' in the body is the unique key.
         
         $request->validate([
             'order_id' => 'required|exists:orders,id',
@@ -33,8 +31,6 @@ class PaymentController extends Controller
             }
 
             if ($order->payment_status !== 'pending') {
-                 // Already processed with a different transaction ID? 
-                 // Or maybe just return current status.
                  DB::commit();
                  return response()->json(['message' => 'Order already processed'], 200);
             }

@@ -18,8 +18,8 @@ The system addresses the challenge of high-traffic sales where multiple users co
 
 1.  **Clone the repository**
     ```bash
-    git clone <repository-url>
-    cd <repository-name>
+    git clone https://github.com/abdelrahmanmagdy177/GetPayInTask.git
+    cd GetPayInTask
     ```
 
 2.  **Install Dependencies**

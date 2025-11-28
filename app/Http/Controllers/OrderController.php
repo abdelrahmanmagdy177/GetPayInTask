@@ -7,7 +7,6 @@ use App\Models\Order;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
-
 class OrderController extends Controller
 {
     public function store(Request $request)
